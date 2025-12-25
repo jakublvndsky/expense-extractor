@@ -28,10 +28,12 @@ Projekt kładzie nacisk na **Type Safety** i **Clean Code**, unikając halucynac
 │   ├── config.py       # Konfiguracja i ładowanie zmiennych (.env)
 │   ├── extractor.py    # Logika biznesowa i komunikacja z OpenAI
 │   ├── schemas.py      # Modele danych Pydantic i Enumy
-│   └── main.py         # Entrypoint aplikacji (CLI)
+├── .python-version     # Wersja Python
 ├── .env.example        # Szablon zmiennych środowiskowych
+├── main.py             # Entrypoint aplikacji (CLI)
 ├── pyproject.toml      # Definicja zależności (uv)
-└── README.md
+├── README.md
+└── uv.lock             # Spis wersji bibliotek z których korzystałem
 
 ```
 ## 🚀 Instalacja i Uruchomienie
