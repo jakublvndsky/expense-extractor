@@ -15,3 +15,6 @@ class Expense(BaseModel):
     currency: str
     category: Category
     is_business: bool
+
+class ExpenseRequest(BaseModel):
+    text: str
