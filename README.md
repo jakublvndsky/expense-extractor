@@ -167,12 +167,3 @@ Expense(
   "is_business": true
 }
 ```
-
-## 🗺️ Roadmap (AI Engineer Path)
-
-- [x] Step 1: Foundations & Structured Data (Pydantic + OpenAI)
-- [x] Step 2: System Design (Separation of business logic from I/O)
-- [x] Step 3: API Backend (Migration to FastAPI)
-- [ ] Step 4: Database (Save results to PostgreSQL)
-- [ ] Step 5: Docker & Deployment
-- [ ] Step 6: Unit and Integration Tests
