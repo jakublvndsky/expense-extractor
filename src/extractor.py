@@ -2,7 +2,7 @@ from openai import AsyncOpenAI
 from src.config import settings
 from src.schemas import Expense
 from datetime import datetime
-import asyncio
+
 client = AsyncOpenAI(api_key=settings.openai_api_key)
 
 
@@ -22,13 +22,3 @@ async def extract_expense(text: str) -> Expense:
     )
     categorized_output = response.output_parsed
     return categorized_output
-
-
-if __name__ == "__main__":
-    user_input = input("Podaj wydatek: ")
-    wynik = asyncio.run(extract_expense(user_input))
-
-    print("--- ZWRÓCONY OBIEKT ---")
-    print(
-        f"Kategoria: {wynik.category.value}\nOpis: {wynik.description}\nKwota: {wynik.amount} {wynik.currency}"
-    )
